@@ -3,7 +3,7 @@ import socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # instance = Class(argument1, argument2)
 
-client_socket.connect(("127.0.0.1", 65432))
+client_socket.connect(("10.0.0.24", 65432))
 
 message_to_send = input("What would you like to send to the server? \n")
 

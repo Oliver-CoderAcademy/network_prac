@@ -4,7 +4,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # instance = MyClass(argument1, argument2...)
 
 port_number = 65432
-server_socket.bind(("127.0.0.1", port_number))
+server_socket.bind(("0.0.0.0", port_number))
 server_socket.listen()
 print(f"Listening for incoming connection on port {port_number}...")
 
